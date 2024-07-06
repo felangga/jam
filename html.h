@@ -1,0 +1,1 @@
+String getHtmlContent(String ssid, String password);
