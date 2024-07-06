@@ -101,14 +101,6 @@ void loop() {
   int minutePWM = map(minutes, 0, 59, 0, 190);  // 0-59 minutes mapped to 0-255 PWM
   int secondPWM = map(seconds, 0, 59, 0, 187);  // 0-59 seconds mapped to 0-255 PWM
 
-  // Debug prints
-  Serial.print("Map: ");
-  Serial.print(hourPWM);
-  Serial.print(":");
-  Serial.print(minutePWM);
-  Serial.print(":");
-  Serial.println(secondPWM);
-
   // Output PWM signals to the meters
   analogWrite(hourPin, hourPWM);
   analogWrite(minutePin, minutePWM);
